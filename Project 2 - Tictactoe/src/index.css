@@ -1,0 +1,139 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 60px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game,
+.player-turn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.header {
+  padding: 20px 20px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+  background-color: lightblue;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.game-settings {
+  margin-top: 20px;
+}
+
+.game-settings button {
+  padding: 10px 25px;
+  margin-left: 10px;
+  border: none;
+}
+
+.game-board {
+  margin-left: 80px;
+}
+
+.game-col {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.f {
+  margin-top: 10px;
+}
+
+.status-bar {
+  font-size: 20px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #4568dc 0%,
+    #b06ab3 51%,
+    #4568dc 100%
+  );
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.8s
+}
+
+.btn-grad:active {
+    color: black;
+    filter: brightness(60%);
+    font-weight: bold;
+    transition-duration: 0.05s;
+}
+
+@media (max-width: 300px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .game-board {
+    margin-left: 50px;
+  }
+
+  .game-settings button {
+    padding: 10px 15px;
+  }
+}
